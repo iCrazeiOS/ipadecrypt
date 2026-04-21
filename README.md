@@ -47,11 +47,15 @@ All installable through Sileo:
 
 ## Install
 
+Download a prebuilt binary from the [releases page](https://github.com/londek/ipadecrypt/releases/latest).
+
+Using go install:
+
 ```sh
 go install github.com/londek/ipadecrypt/cmd/ipadecrypt@latest
 ```
 
-Or from source:
+From source:
 
 ```sh
 git clone https://github.com/londek/ipadecrypt
