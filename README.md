@@ -6,8 +6,9 @@
 *Give it a bundle ID, get a decrypted `.ipa`. And yes - it happily decrypts iOS 26 apps.*
 
 [![Go Version](https://img.shields.io/badge/Go-1.24%2B-00ADD8?style=flat-square&logo=go)](https://golang.org/)
-[![Platform](https://img.shields.io/badge/platform-macOS-000?style=flat-square&logo=apple)](https://www.apple.com/macos/)
-[![iOS](https://img.shields.io/badge/iOS-14--26-007AFF?style=flat-square&logo=ios)](https://www.apple.com/ios/)
+[![macOS](https://img.shields.io/badge/macOS-000?style=flat-square&logo=apple&logoColor=white)](#install)
+[![Linux](https://img.shields.io/badge/Linux-000?style=flat-square&logo=linux&logoColor=white)](#install)
+[![Windows](https://img.shields.io/badge/Windows-000?style=flat-square&logo=windows&logoColor=white)](#install)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](#license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/londek/ipadecrypt/pulls)
 
@@ -28,12 +29,12 @@ You don't have to *run* an encrypted iOS app to decrypt it. After `posix_spawn` 
 
 ## Requirements
 
-### On your Mac
-- macOS (Apple Silicon or Intel)
-- Go 1.24+ for building from source
-- Jailbroken iPhone
+### On your computer
+- macOS, Linux, or Windows - anything that can SSH into the device
+- Go 1.24+ for building from source (prebuilt binaries on the releases page)
+- Jailbroken iPhone reachable over the network
 
-### On the jailbroken iPhone / iPad
+### On the jailbroken iPhone
 All installable through Sileo:
 
 | Package | Purpose |
@@ -81,7 +82,7 @@ A four-step interactive wizard:
 ### Decrypt an app
 
 ```sh
-ipadecrypt decrypt <bundle-id>
+ipadecrypt decrypt <bundle-id|app-store-id|path-to-local-ipa>
 ```
 
 ## License
